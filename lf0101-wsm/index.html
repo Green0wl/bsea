@@ -10,7 +10,51 @@
 </head>
 
 <body>
+  <table>
+    <caption>Weighted Sum Model</caption>
+    <thead>
+      <tr>
+        <th rowspan="2"></th>
+        <th id="criteria-th" colspan="2">Criteria</th>
+        <th rowspan="2">WSM Score</th>
+      </tr>
+      <tr id="criteria-inputs">
+        <th><input disabled type="text" name="C1" value="C1"></th>
+        <th><input disabled type="text" name="C2" value="C2"></th>
+      </tr>
+      <tr id="weighting">
+        <th>Weighting</th>
+        <th><input type="number" name="C1W" value="1"></th>
+        <th><input type="number" name="C2W" value="1"></th>
+        <th>N/A</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="RA1">
+        <th>
+          <input disabled type="text" name="A1" value="A1">
+        </th>
+        <td><input type="number" name="A1C1" value="0"></td>
+        <td><input type="number" name="A1C2" value="0"></td>
+        <td>
+          <p id="A1">0</p>
+        </td>
+      </tr>
+      <tr id="RA2">
+        <th>
+          <input disabled type="text" name="A2" value="A2">
+        </th>
+        <td><input type="number" name="A2C1" value="0"></td>
+        <td><input type="number" name="A2C2" value="0"></td>
+        <td>
+          <p id="A2">0</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
+  <button id="new-criteria" type="button">New Criteria</button>
+  <button id="new-alternative" type="button">New Alternative</button>
 </body>
 
 </html>
